@@ -1,0 +1,10 @@
+/* Global */
+:root {
+  /* Color */
+  --primary: #212121;
+  --primary-light: #484848;
+  --primary-dark: #000000;
+  --secondary: #e0cbd1;
+  --secondary-light: #fffeff;
+  --secondary-dark: #ae9aa0;
+}

@@ -7,4 +7,107 @@
   --secondary: #e0cbd1;
   --secondary-light: #fffeff;
   --secondary-dark: #ae9aa0;
+
+  /* Font-size */
+  --font-large: 60px;
+  --font-medium: 24px;
+  --font-regular: 20px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font-weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+}
+
+/* Universial-tag */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  cursor: default;
+}
+
+section {
+  position: relative;
+}
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
+  background-color: lightgrey;
+  height: 100vh; /* vh = viewport height */
+}
+
+#home .home_flexbox {
+  display: flex;
+  height: 100%;
+}
+
+#home .home-left {
+  width: 500px;
+  background-color: var(--primary-dark);
+  height: 100%;
+}
+
+#home #home_logo {
+  width: 200px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /*content들을 가운데 정렬 */
+  align-items: center;
+}
+
+#home #home_logo .home_logo_text {
+  text-decoration: none;
+  font-size: var(--font-regular);
+  letter-spacing: 3px;
+  color: #fff;
+  font-weight: var(--weight-bold);
+}
+
+#home .home-right {
+  width: 1100px;
+}
+
+#home #home_nav {
+  width: 100%;
+  height: 100px;
+  background-color: var(--primary-light);
+  z-index: 10;
+}
+
+#home .home_text {
+  position: absolute;
+  top: 55vh;
+  left: 200px;
+  color: #fff;
+}
+
+#home .home_text_name {
+  font-size: 55px;
+  font-weight: var(--weight-regular);
+  line-height: 70px;
+}
+
+#home .home_text_name span {
+  font-size: 80px;
+  font-weight: var(--weight-bold);
+}
+
+#home .home_text_role {
+  width: 400px;
+  height: 50px;
+  font-size: 20px;
+  background-color: var(--secondary);
+  text-align: center;
+  color: #212121;
+  font-weight: var(--weight-semi-bold);
+  line-height: 50px;
 }

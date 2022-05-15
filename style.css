@@ -44,6 +44,8 @@ section {
   height: 100vh; /* vh = viewport height */
 }
 
+/* HOME part CSS */
+
 #home .home_flexbox {
   display: flex;
   height: 100%;
@@ -110,4 +112,55 @@ section {
   color: #212121;
   font-weight: var(--weight-semi-bold);
   line-height: 50px;
+}
+
+#home .home_nav_ul {
+  height: 100px;
+  line-height: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  list-style: none;
+}
+
+#home .home_nav_ul_li:hover {
+  list-style: disc;
+}
+
+#home .home_nav_ul_li {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 20px;
+  font-size: var(--font-small);
+}
+
+#home .home_nav_ul_li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#home .home_nav_ul_li a:hover {
+  color: var(--secondary);
+}
+
+/* ABOUT part CSS */
+
+#about .section_title {
+  position: absolute;
+}
+#about .about-left {
+  height: 100%;
+  width: 50%;
+  background-color: var(--secondary-dark);
+  float: left;
+}
+
+#about .about-right {
+  height: 100%;
+  width: 50%;
+  float: left;
+  background-color: var(--primary-dark);
 }

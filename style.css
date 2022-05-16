@@ -164,3 +164,14 @@ section {
   float: left;
   background-color: var(--primary-dark);
 }
+
+/* WORK part CSS */
+#work .container {
+  background-color: var(--primary-dark);
+}
+
+#work .work_header {
+  height: 15vh;
+  width: 100%;
+  background-color: var(--secondary-dark);
+}
